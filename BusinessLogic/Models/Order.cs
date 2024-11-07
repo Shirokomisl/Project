@@ -2,8 +2,11 @@
 {
     public class Order
     {
-        public int Id { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime DeliveredDate { get; set; }
+        public int ID { get; set; }
+        public int UserID { get; set; }
+        public string Status { get; set; }
+        public DateTime OrderDate { get; set; }
+        public User? User { get; set; }
+        public List<OrderProduct>? OrderProducts { get; set; }
     }
 }
