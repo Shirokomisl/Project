@@ -52,23 +52,3 @@ namespace LampShop.BusinessLogic.Services
         }
     }
 }
-
-//Для ICategory
-public interface ICategoryService
-{
-    Task<List<Category>> GetCategoriesAsync();
-    Task<Category?> GetCategoryByIdAsync(int categoryId);
-    Task<Category> CreateCategoryAsync(Category category);
-    Task<Category> UpdateCategoryAsync(int categoryId, Category category);
-    Task DeleteCategoryAsync(int categoryId);
-}
-
-//Для IProduct
-public interface IProductService
-{
-    Task<List<Product>> GetProductsAsync();
-    Task<Product?> GetProductByIdAsync(int productId);
-    Task<Product> CreateProductAsync(Product product);
-    Task<Product> UpdateProductAsync(int productId, Product product);
-    Task DeleteProductAsync(int productId);
-}
